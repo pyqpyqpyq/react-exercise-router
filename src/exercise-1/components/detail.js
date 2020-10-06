@@ -8,8 +8,6 @@ class detail extends Component{
     }
     componentDidMount(){
         for(var i in data){
-            console.log("data[i].id",data[i].id)
-            console.log(this.props)
             if(data[i].id==this.props.match.params.id){
                 this.setState({
                     info:data[i]

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
-import {Route} from "react-router";
+import {BrowserRouter} from 'react-router-dom';
+import {Route, Switch} from "react-router";
 import Home from "./Home";
 import About from "./About";
 import User from "./User";
@@ -10,12 +10,14 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Router>
+        <BrowserRouter>
+        <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/:user(\d+)' component={User} />
+            <Route exact path='/about' component={User} />
             <Route component={NotMatch} />
-            <Route path='/' component={Home} />
-            <Route path='/:user' component={User} />
-            <Route path='/about' component={About} />
-        </Router>
+        </Switch>
+        </BrowserRouter>
       </div>
     );
   }
