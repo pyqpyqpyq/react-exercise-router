@@ -16,3 +16,50 @@
 .hdeaderInfo {
     margin-left: 40px;      
 }
+
+a:link{
+	text-decoration: none;
+}
+
+.website:hover{    
+    color:#FF0000 ;
+    border-bottom:2px solid black;
+}
+p {
+    font-size: 1.8em; 
+    padding-left: 100px; 
+    padding-left: 100px; 
+    font-family: 'Raleway', sans-serif; 
+}
+.secondp {
+    margin-top: 80px; 
+}
+.home {
+    clear: both;
+    margin-top: 80px;
+}
+.aboutUs, .myprofile {
+    margin-top: 80px;
+}
+.allProduct {
+    display: block;
+    font-size: 1.8em; 
+    padding-left: 100px; 
+    padding-left: 100px; 
+    font-family: 'Raleway', sans-serif; 
+    margin-top: 80px;
+}
+.productInfo {
+    display: block;
+    font-size: 1.8em; 
+    padding-left: 100px; 
+    padding-left: 100px; 
+    font-family: 'Raleway', sans-serif; 
+    color:#FF0000 ;
+    margin-top: 20px;
+    background-color: #ffffff;    
+    border: none;
+}
+button{
+    outline:none;
+}
