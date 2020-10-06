@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import "../styles/App.css";
-import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  Link,
-  Switch,
-} from "react-router-dom";
-
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import MyProfile from "./myprofile";
+import Home from "./home";
+import AboutUs from "./aboutus";
 class App extends Component {
   render() {
     return (
